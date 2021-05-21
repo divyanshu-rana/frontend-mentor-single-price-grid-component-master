@@ -1,0 +1,127 @@
+:root {
+  /* COLORS */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  /* FONT FAMILY */
+  --font-family: "Karla", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--Light-Gray);
+}
+
+/*______________________________________________DESKTOP___________________________________________*/
+
+/* HOME */
+
+.home-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container{
+  width: 50%;
+  padding: 2rem;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main_top-container{
+  background-color: #fff;
+  padding: 2rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+.main_top-container h1{
+  color: var(--Cyan);
+}
+.main_top-container h3{
+  color: var(--Bright-Yellow);
+  font-size: 18px;
+}
+.main_top-container p{
+  color: var(--Grayish-Blue);
+  font-size: 18px;
+}
+.main_bottom-container{
+  color: var(--Light-Gray);
+  display: flex;
+}
+.main_bottom-container h3{
+  color: #fff;
+  opacity: 0.8;
+  font-size: 20px;
+}
+.main_bottom-container p,li{
+  font-size:16px;
+  opacity: 0.8;
+}
+span{
+  font-size: 40px;
+  color: #fff;
+  opacity: unset;
+}
+.bottom_left-container,
+.bottom_right-container{
+  width: 50%;
+  padding: 2rem;
+  min-height: 30vh;
+}
+.bottom_left-container{
+  background-color: var(--Cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+.btn-signup{
+  text-decoration: none;
+  color: var(--White);
+  background:var(--Bright-Yellow);
+  padding: 12px 70px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.bottom_right-container{
+  background-color: hsla(179, 62%, 43%, 0.822);
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+/*_____________________________________________MOBILE___________________________________________*/
+
+@media only screen and (max-width: 400px){
+
+.main-container,
+.bottom_left-container,
+.bottom_right-container{
+  width: 100%;
+}
+.main_bottom-container{
+  flex-direction: column;
+}
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
